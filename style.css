@@ -1,2 +1,130 @@
+@import url(fontawesome-all.min.css);
+html {
+  scroll-behavior: smooth;
+}
 
-c
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Reseting the page */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #000000;
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 650;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav bar*/
+.nav {
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fed9b7;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  color: #001845;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: #eb837c5d;
+}
+
+/* Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.welcome-section > h1 {
+    color: #f07167;
+  }
+  
+
+.welcome-section > p {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 200;
+  color: #f07167;
+}
+
+.cnt_links {
+  display: block;
+  color: #001845;
+  font-size: 2.2rem;
+}
+
+.cnt_links > a {
+  padding: 1rem 2rem 1rem 2rem;
+}
